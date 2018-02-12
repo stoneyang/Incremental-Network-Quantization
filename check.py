@@ -30,7 +30,7 @@ def main(model, weights, output_dir):
 	caffe.set_mode_gpu()
 	print "main"
 	input_net = load_model(model, weights)
-    weight_power(input_net, output_dir)
+	weight_power(input_net, output_dir)
 
 def parse_args():
 	"""Parse input arguments
@@ -52,4 +52,4 @@ def parse_args():
 if __name__ == '__main__':
 	args = parse_args()
 
-	main(args.model, args.input_weights. args.output_dir)
+	main(args.model, args.input_weights, args.output_dir)
